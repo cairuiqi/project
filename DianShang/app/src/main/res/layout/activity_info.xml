@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".acitvity.myactivity.InfoActivity"
+    android:layout_marginTop="@dimen/dp_20"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/my"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我的资料"
+        android:gravity="center"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dp_10"
+        android:layout_gravity="center_horizontal">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="@dimen/dp_312"
+            android:layout_height="@dimen/dp_138">
+
+            <TextView
+                android:id="@+id/myhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:text="我的头像"
+                app:layout_constraintBottom_toBottomOf="@id/img"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_20"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img"
+                android:layout_marginBottom="@dimen/dp_10"/>
+            <TextView
+                android:id="@+id/myname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_10"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view1"
+                android:text="我的昵称" />
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/myname"
+                app:layout_constraintBottom_toBottomOf="@id/myname"
+                android:text="爱吃的小姐姐"
+                android:layout_marginRight="@dimen/dp_20"/>
+            <View
+                android:id="@+id/view2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/myname"
+                android:layout_marginBottom="@dimen/dp_10"/>
+            <TextView
+                android:id="@+id/mypwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_10"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view2"
+                android:text="我的密码" />
+            <TextView
+                android:id="@+id/pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/mypwd"
+                app:layout_constraintBottom_toBottomOf="@id/mypwd"
+                android:text="爱吃的小姐姐"
+                android:layout_marginRight="@dimen/dp_20"/>
+            <View
+                android:id="@+id/view3"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mypwd"
+                android:layout_marginBottom="10dp"/>
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

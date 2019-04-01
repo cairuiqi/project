@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/my_backgroud">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/my_shape" />
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="80dp"
+        android:src="@mipmap/my_tou" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="我是吃不胖的小姐姐" />
+
+
+    <RelativeLayout
+        android:id="@id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp">
+
+        <Button
+            android:id="@+id/information"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@mipmap/my_icon_information_n_hdpi" />
+
+        <TextView
+            android:id="@+id/myuser"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/information"
+            android:layout_marginLeft="100dp"
+            android:text="个人资料"
+            android:textSize="22dp" />
+
+
+        <Button
+            android:id="@+id/circle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/information"
+            android:layout_marginLeft="20dp"
+            android:background="@mipmap/my_icon_circle_n_hdpi" />
+
+        <TextView
+            android:id="@+id/mycircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/information"
+            android:layout_alignLeft="@id/circle"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="5dp"
+            android:text="我的圈子"
+            android:textSize="22dp" />
+
+
+        <Button
+            android:id="@+id/foot"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/circle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@mipmap/my_icon_foot_n_hdpi" />
+
+        <TextView
+            android:id="@+id/myfoot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/circle"
+            android:layout_alignLeft="@id/foot"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="5dp"
+            android:text="我的足迹"
+            android:textSize="22dp" />
+
+
+        <Button
+            android:id="@+id/walle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/foot"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@mipmap/my_icon_wallet_n_hdpi" />
+
+        <TextView
+            android:id="@+id/mywalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/foot"
+            android:layout_alignLeft="@id/walle"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="5dp"
+            android:text="我的钱包"
+            android:textSize="22dp" />
+
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/walle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@mipmap/my_icon_address_n_hdpi" />
+
+        <TextView
+            android:id="@+id/myaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/walle"
+            android:layout_alignLeft="@id/walle"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="5dp"
+            android:text="我的收货地址"
+            android:textSize="22dp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

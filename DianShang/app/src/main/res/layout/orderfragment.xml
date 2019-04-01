@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/dp_20">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_102"
+        app:cardCornerRadius="@dimen/dp_12"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginRight="@dimen/dp_24"
+        app:cardElevation="@dimen/dp_5">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/over"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_margin="@dimen/dp_10"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_20"
+                android:src="@mipmap/common_icon_alllist_n_hdpi"/>
+
+            <ImageView
+                android:id="@+id/daimoney"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_margin="@dimen/dp_10"
+                app:layout_constraintLeft_toRightOf="@id/over"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:src="@mipmap/common_icon_pay_n_hdpi" />
+
+            <ImageView
+                android:id="@+id/daishou"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginLeft="@dimen/dp_10"
+                app:layout_constraintLeft_toRightOf="@id/daimoney"
+                app:layout_constraintTop_toTopOf="@id/daimoney"
+                android:src="@mipmap/common_icon_receive_n" />
+
+            <ImageView
+                android:id="@+id/daiping"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                app:layout_constraintLeft_toRightOf="@id/daishou"
+                app:layout_constraintTop_toTopOf="@id/daishou"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:src="@mipmap/commom_icon_comment_n_hdpi" />
+
+            <ImageView
+                android:id="@+id/yiover"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginLeft="@dimen/dp_10"
+                app:layout_constraintTop_toTopOf="@id/daishou"
+                app:layout_constraintLeft_toRightOf="@id/daiping"
+                android:src="@mipmap/common_icon_finish_n_hdpi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部订单"
+                android:gravity="center_horizontal"
+                app:layout_constraintLeft_toLeftOf="@id/over"
+                app:layout_constraintRight_toRightOf="@id/over"
+                app:layout_constraintTop_toBottomOf="@id/over"
+                android:layout_marginTop="@dimen/dp_10"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="代付款"
+                app:layout_constraintLeft_toLeftOf="@id/daimoney"
+                app:layout_constraintRight_toRightOf="@id/daimoney"
+                app:layout_constraintTop_toBottomOf="@id/daimoney"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center_horizontal"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                app:layout_constraintLeft_toLeftOf="@id/daishou"
+                app:layout_constraintRight_toRightOf="@id/daishou"
+                app:layout_constraintTop_toBottomOf="@id/daishou"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="待收货"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                app:layout_constraintLeft_toLeftOf="@id/daiping"
+                app:layout_constraintRight_toRightOf="@id/daiping"
+                app:layout_constraintTop_toBottomOf="@id/daiping"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="待评价"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="@id/yiover"
+                app:layout_constraintRight_toRightOf="@id/yiover"
+                app:layout_constraintTop_toBottomOf="@id/yiover"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center_horizontal"
+                android:text="待完成"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp_12" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <com.bwei.crq.fragment.orderfragment.HomeViewpage
+        android:id="@+id/viewpage"
+        android:layout_width="349dp"
+        android:layout_height="336dp"
+        android:layout_marginBottom="@dimen/dp_20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/card"
+        app:layout_constraintRight_toRightOf="@id/card"
+        app:layout_constraintTop_toBottomOf="@id/card"></com.bwei.crq.fragment.orderfragment.HomeViewpage>
+
+
+<!--
+    <com.example.weiduplatform.view.HomeViewpage
+        android:id="@+id/viewpage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="@id/card"
+        app:layout_constraintRight_toRightOf="@id/card"
+        app:layout_constraintTop_toBottomOf="@id/card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/dp_20">
+
+
+
+    </com.example.weiduplatform.view.HomeViewpage>-->
+
+</android.support.constraint.ConstraintLayout>

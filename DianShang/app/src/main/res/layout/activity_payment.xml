@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".acitvity.shopingactivity.PayActivity">
+
+    <TextView
+        android:id="@+id/zhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_138"
+        android:text="选择支付方式"
+        android:textColor="#666666"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="@dimen/dp_312"
+        android:layout_height="@dimen/dp_180"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_24"
+        app:cardCornerRadius="@dimen/dp_3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/zhi">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/money"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:src="@mipmap/common_icon_money_n_hdpi"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/weixin"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_20"
+                android:src="@mipmap/common_icon_weixin_n_hdpi"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/money" />
+
+            <ImageView
+                android:id="@+id/zhifubao"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_20"
+                android:src="@mipmap/common_icon_zhifubao_n_hdpi"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/weixin" />
+
+            <TextView
+                android:id="@+id/moneyname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:text="余额支付"
+                android:textSize="@dimen/sp_14"
+                app:layout_constraintBottom_toBottomOf="@id/money"
+                app:layout_constraintLeft_toRightOf="@id/money"
+                app:layout_constraintTop_toTopOf="@id/money" />
+
+            <TextView
+                android:id="@+id/weixinname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:text="微信支付"
+                android:textSize="@dimen/sp_14"
+                app:layout_constraintBottom_toBottomOf="@id/weixin"
+                app:layout_constraintLeft_toRightOf="@id/weixin"
+                app:layout_constraintTop_toTopOf="@id/weixin" />
+
+            <TextView
+                android:id="@+id/zhifubaoname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:text="支付宝支付"
+                android:textSize="@dimen/sp_14"
+                app:layout_constraintBottom_toBottomOf="@id/zhifubao"
+                app:layout_constraintLeft_toRightOf="@id/zhifubao"
+                app:layout_constraintTop_toTopOf="@id/zhifubao" />
+
+            <RadioButton
+                android:id="@+id/moneybtn"
+                android:layout_width="34dp"
+                android:layout_height="28dp"
+                android:layout_marginRight="40dp"
+                android:checked="true"
+                app:layout_constraintBottom_toBottomOf="@id/moneyname"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/moneyname"
+                app:layout_constraintVertical_bias="0.555" />
+
+            <RadioButton
+                android:id="@+id/weixinbtn"
+                android:layout_width="34dp"
+                android:layout_height="28dp"
+                android:layout_marginRight="40dp"
+                app:layout_constraintBottom_toBottomOf="@id/weixinname"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/weixinname"
+                app:layout_constraintVertical_bias="0.666" />
+
+            <RadioButton
+                android:id="@+id/zhifubaobtn"
+                android:layout_width="34dp"
+                android:layout_height="28dp"
+                android:layout_marginRight="40dp"
+                app:layout_constraintBottom_toBottomOf="@id/zhifubaoname"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/zhifubaoname"
+                app:layout_constraintVertical_bias="0.555" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/pay"
+        android:layout_width="@dimen/dp_312"
+        android:layout_height="@dimen/dp_40"
+        android:layout_gravity="center"
+        android:background="@drawable/pay_shape"
+        android:text="余额支付300元"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp_14" />
+
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.bwei.crq.custom.HomeSerch
+        android:id="@+id/serch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rlv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+           ></android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <LinearLayout
+        android:id="@+id/serch_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <include
+            layout="@layout/serch_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/tag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.recker.flybanner.FlyBanner
+                        android:id="@+id/flyBanner"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"></com.recker.flybanner.FlyBanner>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@mipmap/bitmap2"
+                            android:gravity="center"
+                            android:text="热销新品"
+                            android:textColor="#d46161" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rlv2"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"></android.support.v7.widget.RecyclerView>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@mipmap/bitmap"
+                            android:gravity="center"
+                            android:text="魔力时尚"
+                            android:textColor="#00f" />
+
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rlv3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </android.support.v7.widget.RecyclerView>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:background="@mipmap/bitmap1"
+                            android:gravity="center"
+                            android:text="品质生活"
+                            android:textColor="#d46161" />
+
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rlv4"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp">
+
+                        </android.support.v7.widget.RecyclerView>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
